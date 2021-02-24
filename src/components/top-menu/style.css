@@ -1,0 +1,86 @@
+.m-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.m-container>ul{
+    list-style: none;
+}
+.m-container>ul>li{
+    display: inline;
+}
+
+.m-container>ul>li>button{
+    background: none;
+    outline: none;
+    border: none;
+    font-family: 'Oswald';
+    color: #ffffff;
+    cursor: pointer;
+    transition: ease-in-out all 300ms;
+    text-transform: capitalize;
+}
+
+.m-container>ul>li.active>button{
+    background-color: #678FEB;
+    box-shadow: 1px 1px 6px 6px skyblue;
+    transition: ease-in-out all 300ms;
+}
+
+.m-container>ul>li:not(.active)>button:hover{
+    color: yellow; 
+    transition: ease-in-out all 100ms;
+}
+
+@media screen and (max-width:599px){
+    .m-container{
+        padding: 0;
+    }
+    .m-container>ul>li:not(:last-of-type){
+        margin-right: 8px;
+    }
+    .m-container>ul>li>button{
+        font-size: 16px;
+        padding: 6px 8px;
+    }
+}
+
+@media (min-width: 600px){
+    .m-container{
+        padding: 0;
+    }
+    .m-container>ul>li:not(:last-of-type){
+        margin-right: 6px;
+    }
+    .m-container>ul>li>button{
+        font-size: 16px;
+        padding: 6px 8px;
+    }
+}
+
+@media screen and (min-width: 900px){
+    .m-container>ul>li:not(:last-of-type){
+        margin-right: 6px;
+    }
+    .m-container>ul>li>button{
+        font-size: 18px;
+        padding: 10px 12px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .m-container{
+        padding:16px 24px;
+        background: none;
+    }
+
+    .m-container>ul>li:not(:last-of-type){
+        margin-right: 24px;
+    }
+}

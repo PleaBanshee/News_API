@@ -1,0 +1,1 @@
+export const menuItems = [ 'top stories','business', 'entertainment', 'general', 'health', 'science', 'sports', 'technology']

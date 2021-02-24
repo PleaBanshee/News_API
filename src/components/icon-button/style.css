@@ -1,0 +1,33 @@
+.icon-button{
+    background: none;
+    outline: none;
+    border: none;
+    width: 22px;
+    padding: 0;
+    margin: 0px 4px;
+}
+
+.icon-button>img{
+    width: 100%;
+}
+
+.active{
+    animation: active 300ms ease-in-out;
+}
+
+@keyframes active {
+    0%{
+        transform: scale(.7);
+    }
+
+    25%{
+        transform: scale(1);
+    }
+
+    75%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
