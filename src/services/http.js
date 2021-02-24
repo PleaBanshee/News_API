@@ -5,7 +5,7 @@ const source = axios.CancelToken.source();
 const instance = axios.create({
     baseURL: 'https://newsapi.org/v2/',
     timeout: 30000,
-    headers: { 'Authorization': `Bearer 7be5a33db897460498d807cf31d0709c` },
+    headers: { 'Authorization': `Bearer 6ea1b1633a1f4331b007e9c3b706fe7e` },
     cancelToken: source.token
 });
 
