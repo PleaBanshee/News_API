@@ -11,7 +11,7 @@ const instance = axios.create({
 
 instance.interceptors.response.use(response => response, (error) => {
     if (axios.isCancel(error)) {
-        console.log('Request canceled', error.mesage);
+        console.log('Request cancelled', error.message);
         return Promise.reject(null);
     }
 
